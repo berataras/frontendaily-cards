@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #F2F2F2;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  place-items: center;
+  padding: 30px;
+}
+
+.card, .choose-card, .start-card, .tags-card {
+  padding: 50px;
+  background-color: #fff;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 20px 25px -15px rgba(9, 13, 92, 0.287068);
+          box-shadow: 0px 20px 25px -15px rgba(9, 13, 92, 0.287068);
+  border-radius: 10px;
+  color: #181339;
+}
+
+.choose-card {
+  width: 299px;
+  height: 273px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.choose-card .title {
+  margin-bottom: 27px;
+  font-size: 20px;
+}
+
+.choose-card .radio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choose-card .radio-item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.choose-card .radio-item label {
+  margin-left: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.choose-card .radio-item input[type=radio] {
+  padding: 10px;
+  height: 26px;
+  width: 26px;
+  position: relative;
+}
+
+.choose-card .radio-item input[type=radio]::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background: #6b5cff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.7);
+          transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.choose-card .radio-item input[type=radio]:checked::before {
+  opacity: 1;
+}
+
+.start-card {
+  width: 373px;
+  height: 318px;
+}
+
+.start-card .title {
+  font-weight: 700;
+  margin-bottom: 23px;
+  font-size: 20px;
+}
+
+.start-card .desc {
+  margin-bottom: 29px;
+}
+
+.start-card .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.start-card .buttons .cancel, .start-card .buttons .start {
+  padding: 15px 23px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 104px;
+}
+
+.start-card .buttons .cancel {
+  background: transparent;
+  border: 1px solid #B6C3DC;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.start-card .buttons .cancel:hover {
+  color: white;
+  background-color: #FF7A7F;
+  border-color: #FF7A7F;
+}
+
+.start-card .buttons .start {
+  background-color: #FF7A7F;
+  color: white;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.start-card .buttons .start:hover {
+  color: black;
+  border: 1px solid #B6C3DC;
+  background-color: transparent;
+}
+
+.tags-card {
+  width: 567px;
+  height: 333px;
+}
+
+.tags-card .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+
+.tags-card .desc {
+  font-size: 16px;
+  margin-bottom: 39px;
+}
+
+.tags-card .tags {
+  background-color: transparent;
+  border: 1px solid #B6C3DC;
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+
+.tags-card .tags .tag {
+  background-color: #F0F3F9;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+}
+
+.tags-card .tags .tag:hover {
+  background-color: #ffe5e6;
+}
+
+.tags-card .tags .tag:not(:first-child) {
+  margin-left: 10px;
+}
+
+.tags-card .tags .tag label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.tags-card .tags .tag .close-button {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 300ms all;
+  transition: 300ms all;
+  font-weight: 500;
+  margin-left: 9px;
+}
+
+.tags-card .tags .tag .close-button:hover {
+  background-color: #FF7A7F;
+  color: white;
+}
+/*# sourceMappingURL=app.css.map */
